@@ -123,6 +123,7 @@ html, body {
 
 .android-cta button {
     background-color: #B6C5D3;
+    border: none;
 }
 
 .footer {
