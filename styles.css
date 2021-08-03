@@ -1,0 +1,239 @@
+html, body {
+    background-color: #E5E5E5;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000000;
+
+    /* Responsive styles*/
+    margin-top: 50px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+
+    /* Responsive styles*/
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 698px) {
+    .container {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .content.content {
+        display: block;
+    }
+
+    .content-text {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (min-width: 698px) {
+    .container {
+        max-width: 80vw;
+    }
+
+    .header {
+        margin-top: 113px;
+        flex-direction: row;
+    }
+
+    .header-content {
+        margin-bottom: 100px;
+    }
+
+    .content.content {
+        margin-top: 120px;
+        margin-bottom: 132px;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .desktop-long-screenshot.desktop-long-screenshot, .desktop-long-screenshot.desktop-long-screenshot > img {
+        display: block;
+    }
+
+    .mobile-long-screenshot.mobile-long-screenshot, .mobile-long-screenshot.mobile-long-screenshot > img {
+        display: none;
+    }
+
+    .secondary-long-screenshot.secondary-long-screenshot {
+        display: block;
+    }
+
+    .secondary-long-screenshot-mobile.secondary-long-screenshot-mobile {
+        display: none;
+    }
+
+    .footer {
+        margin-bottom: 171px;
+    }
+}
+
+.logo {
+    width: 112px;
+    height: 116px;
+    margin-right: 28px;
+    margin-bottom: 42px;
+}
+
+.title {
+    font-family: 'Prata';
+    font-size: 42px;
+    line-height: 56px;
+    font-weight: 400;
+}
+
+.sub-title {
+    font-family: 'SF Pro Text';
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+}
+
+.cta button, .android-cta button {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #EBEFF3;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.cta button {
+    background: #000000;
+}
+
+.android-cta button {
+    background-color: #B6C5D3;
+}
+
+.footer {
+    border-top: 1px solid #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 99px;
+}
+
+.hi-svg, .heart-svg {
+    max-width: 24px;
+    max-height: 24px;
+    line-height: 28px;
+    flex-basis: 300px;
+}
+
+.made, .hi {
+    display: flex;
+    flex-direction: row;
+    padding-top: 42px;
+}
+
+.footer-text-container {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.footer-sub-title {
+    font-family: 'Poppins';
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.footer-sub-title a {
+    color: #000000;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 116px;
+    position: relative;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop-long-screenshot, .desktop-long-screenshot > img {
+    /* responsive styles */
+    display: none;
+    width: 30vw;
+}
+
+.mobile-long-screenshot > img {
+    width: 202px;
+    position: absolute;
+    top: 0;
+    right: -110px;
+}
+
+.secondary-long-screenshot {
+    width: 333px;
+    margin-top: 82px;
+    /* Responsive styles */
+    display: none;
+}
+
+.secondary-long-screenshot-mobile {
+    width: 273px;
+    margin-top: 42px;
+}
+
+.content-text > div:nth-child(n+2) {
+    margin-top: 142px
+}
+
+.content-text > div:nth-child(1) {
+    margin-top: 64px;
+}
+
+.content-text > div > img {
+    margin-bottom: 28px;
+}
+
+.content-title {
+    font-family: 'Prata';
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.content-sub-title {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
