@@ -1,5 +1,5 @@
 html, body {
-    background-color: #E5E5E5;
+    background-color: #EBEFF3;
     margin-left: auto;
     margin-right: auto;
     overflow-x: hidden;
@@ -29,8 +29,8 @@ html, body {
 
 @media screen and (max-width: 698px) {
     .container {
-        margin-left: 5vw;
-        margin-right: 5vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 
     .content.content {
@@ -38,13 +38,13 @@ html, body {
     }
 
     .content-text {
-        margin-right: 100px;
+        margin-right: 150px;
     }
 }
 
 @media screen and (min-width: 698px) {
     .container {
-        max-width: 80vw;
+        max-width: 60vw;
     }
 
     .header {
@@ -107,23 +107,36 @@ html, body {
     font-weight: 400;
 }
 
-.cta button, .android-cta button {
+.cta button {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #EBEFF3;
     margin-top: 24px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.android-cta button {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 12px;
+    padding: 12px;
     cursor: pointer;
 }
 
 .cta button {
     background: #000000;
+    border: none;
 }
 
 .android-cta button {
-    background-color: #B6C5D3;
-    border: none;
+    background: #EBEFF3;
+    border-color: #000000;
 }
 
 .footer {
@@ -192,13 +205,19 @@ html, body {
     /* responsive styles */
     display: none;
     width: 30vw;
+
+    /* shadow property
+    box-shadow: -11.301369667053223px 5.650684833526611px 43.32191848754883px 0px #0000003D;
+    */
+
+
 }
 
 .mobile-long-screenshot > img {
     width: 202px;
     position: absolute;
     top: 0;
-    right: -110px;
+    right: -72px;
 }
 
 .secondary-long-screenshot {
@@ -218,11 +237,11 @@ html, body {
 }
 
 .content-text > div:nth-child(1) {
-    margin-top: 64px;
+    margin-top: 16px;
 }
 
 .content-text > div > img {
-    margin-bottom: 28px;
+    margin-bottom: 16px;
 }
 
 .content-title {
